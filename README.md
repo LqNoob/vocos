@@ -6,4 +6,4 @@ Vocos is a fast neural vocoder designed to synthesize audio waveforms from acous
 
 Audio samples and some information are provided in the [web](https://gemelo-ai.github.io/vocos/).
 
-<center><img src="model-voco.png" width="800"></center>
+<center><img src="model-voco.png"></center>
