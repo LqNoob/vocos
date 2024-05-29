@@ -16,7 +16,17 @@ git clone https://github.com/LqNoob/vocos
 pip install -r requirements.txt
 ```
 
+## Training
 
+Prepare a filelist of audio files for the training and validation set. 
+Fill a config file with your filelist paths and start training with:
+
+```bash
+python train.py -c configs/vocos-fs2.yaml
+```
+
+Refer to [Pytorch Lightning documentation](https://lightning.ai/docs/pytorch/stable/) for details about customizing the
+training pipeline.
 
 ## Acknowledgements
 We referred to [vocos](https://github.com/gemelo-ai/vocos) and [matcha](https://github.com/wetdog/vocos/tree/matcha) to implement this.
