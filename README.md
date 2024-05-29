@@ -7,3 +7,16 @@ Vocos is a fast neural vocoder designed to synthesize audio waveforms from acous
 Audio samples and some information are provided in the [web](https://gemelo-ai.github.io/vocos/).
 
 <center><img src="model-voco.png"></center>
+
+## Installation
+Clone the repository and install dependencies.
+```shell
+# the codebase has been tested on Python 3.10 with PyTorch 2.0.1 binaries
+git clone https://github.com/LqNoob/vocos
+pip install -r requirements.txt
+```
+
+
+
+## Acknowledgements
+We referred to [vocos](https://github.com/gemelo-ai/vocos) and [matcha](https://github.com/wetdog/vocos/tree/matcha) to implement this.
