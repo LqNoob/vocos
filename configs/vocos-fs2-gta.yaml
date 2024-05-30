@@ -4,11 +4,11 @@ seed_everything: 4444
 data:
   class_path: vocos.dataset_gta.VocosDataModule
   init_args:
-    input_wavs_dir: /data/sdd/beibeihu/dataset/allspeakers_20201223150014
-    input_mels_dir: acoustic_features/fastpitch/fastpitch_v1_f0uv_conformer/outdir_ms109_fastpitch_uttphonestyle_phase3_174lj_bigvgan/gta_mbmg_checkpoint_melf0_300000_0.209740/
+    input_wavs_dir: ??
+    input_mels_dir: ??
 
     train_params:
-      filelist_path: filelist/annotations_20201223150014_174.txt
+      filelist_path: ??
       sampling_rate: 22050
       n_fft: 1024
       win_length: 1024
@@ -18,7 +18,7 @@ data:
       num_workers: 8
 
     val_params:
-      filelist_path: filelist/annotations_20201223150014_174.txt
+      filelist_path: ??
       sampling_rate: 22050
       n_fft: 1024
       win_length: 1024
