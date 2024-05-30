@@ -44,7 +44,7 @@ class VocosDataModule(LightningDataModule):
 class VocosDataset(Dataset):
     def __init__(self, cfg: DataConfig, train: bool):
 
-        input_wavs_dir = '/data/sdd/beibeihu/dataset/allspeakers_20201223150014'
+        input_wavs_dir = '??'
 
         with open(cfg.filelist_path, 'r', encoding='utf-8') as fi:
             self.filelist = [os.path.join(input_wavs_dir, x.split('|')[0]) for x in fi.read().split('\n') if len(x) > 0]
