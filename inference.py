@@ -14,7 +14,6 @@ from vocos.pretrained import Vocos
 
 def infer():
     audio_path = 'data/parastory_0001_speaker166_f0uvada_166lj44k_generated_e2e.wav'
-    audio_path = '/data/sdd/beibeihu/dataset/allspeakers_20201223150014/166/Wave_22050/f55cf618cd0f11ed8c2500163e124273+纸上的姐妹+纸上的姐妹第9集+00000106+00689580+00699850.wav'
     data, sample_rate = torchaudio.load(audio_path)
     
     #mel_path = 'data/parastory_0001_speaker166_f0uvada_166lj44k.npy'
@@ -51,14 +50,12 @@ def infer_copy_synthesis():
     from vocos.pretrained import Vocos
     
     config_path = 'checkpoints/cp_vocos_174_gt_22050/logs/lightning_logs/version_2/config.yaml'
-    model_path  = 'checkpoints/cp_vocos_174_gt_22050/vocos_checkpoint_epoch=693_step=165000.ckpt'
-    model_path  = 'checkpoints/cp_vocos_174_gt_22050/vocos_checkpoint_epoch=1596_step=380000.ckpt'
     model_path  = 'checkpoints/cp_vocos_174_gt_22050/vocos_checkpoint_epoch=5714_step=1360000.ckpt'
 
     sample_rate = 22050
     vocos = Vocos.from_pretrained(model_path, config_path)
 
-    audio_path = '/data/sdd/beibeihu/dataset/allspeakers_20201223150014/174/Wave_22050/fadbf21ce05011ee98ca28b2bd2d5eb4+9152ff0ee0e211eeb2df00163e124273+00000001+00001870+00009590.wav'
+    audio_path = 'fadbf21ce05011ee98ca28b2bd2d5eb4+9152ff0ee0e211eeb2df00163e124273+00000001+00001870+00009590.wav'
     y, sr = torchaudio.load(audio_path)
     if y.size(0) > 1:  # mix to mono
         y = y.mean(dim=0, keepdim=True)
