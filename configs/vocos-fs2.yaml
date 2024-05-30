@@ -5,14 +5,14 @@ data:
   class_path: vocos.dataset.VocosDataModule
   init_args:
     train_params:
-      filelist_path: filelist/annotations_20201223150014_174.txt
+      filelist_path: filelist/??.txt
       sampling_rate: 22050
       num_samples: 16384
       batch_size: 32
       num_workers: 8
 
     val_params:
-      filelist_path: filelist/annotations_20201223150014_174.txt
+      filelist_path: filelist/??.txt
       sampling_rate: 22050
       num_samples: 48384
       batch_size: 16
