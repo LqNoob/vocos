@@ -25,8 +25,20 @@ Fill a config file with your filelist paths and start training with:
 python train.py -c configs/vocos-fs2.yaml
 ```
 
+If you need to do fine-tune on the model. Run the following command：
+```bash
+python train.py -c configs/vocos-fs2-gta.yaml
+```
+
 Refer to [Pytorch Lightning documentation](https://lightning.ai/docs/pytorch/stable/) for details about customizing the
 training pipeline.
+
+## Inference (copy synthesis)
+
+Inference only supports the copy synthesis process, see:
+```bash
+python inference.py
+```
 
 ## Acknowledgements
 We referred to [vocos](https://github.com/gemelo-ai/vocos) and [matcha](https://github.com/wetdog/vocos/tree/matcha) to implement this.
